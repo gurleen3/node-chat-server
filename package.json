@@ -1,0 +1,38 @@
+{
+  "name": "websocket-chat-server",
+  "version": "1.0.0",
+  "description": "Node.js chat server for JavaScript Clients using Websockets",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node src/server.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasbeuving/node-websocket-chatserver.git"
+  },
+  "keywords": [
+    "socketserver",
+    "nodejs"
+  ],
+  "author": "Tobias Beuving",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobiasbeuving/node-websocket-chatserver/issues"
+  },
+  "homepage": "https://github.com/tobiasbeuving/node-websocket-chatserver#readme",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nodejs-websocket": "^1.7.1",
+    "ws": "^3.0.0",
+    "vue-websocket-chat-client": "git+ssh://git@github.com:tobiasbeuving/vue-websocket-chat-client.git"
+  },
+  "devDependencies": {}
+}
